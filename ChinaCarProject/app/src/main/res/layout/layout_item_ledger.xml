@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:background="@android:color/holo_green_light"
+    android:divider="@drawable/spacer_medium"
+    android:orientation="horizontal"
+    android:showDividers="middle">
+
+    <TextView
+        android:id="@+id/tv_bianhao"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="编号"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/tv_mingcheng"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="名称"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_xinghao"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="型号"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_changjia"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="厂家"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_bumen"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="部门"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_anzhuang"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="安装地点"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_shiyong"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="使用情况"
+        android:textColor="@color/white" />
+
+
+    <TextView
+        android:id="@+id/tv_leixing"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="类型"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_chejian"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="车间"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_xitong"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="系统"
+        android:textColor="@color/white" />
+
+</LinearLayout>

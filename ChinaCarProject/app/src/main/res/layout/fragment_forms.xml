@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:andorid="http://schemas.android.com/apk/res-auto">
+    
+    <data>
+        <variable
+            name="name"
+            type="String"/>
+        
+    </data>
+
+
+    <!--<HorizontalScrollView-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_width="match_parent">-->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            >
+
+            <lecho.lib.hellocharts.view.LineChartView
+                android:id="@+id/chart_top"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:padding="5dp"
+                >
+            </lecho.lib.hellocharts.view.LineChartView>
+
+        </LinearLayout>
+    <!--</HorizontalScrollView>-->
+</layout>

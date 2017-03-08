@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="com.ycl.car.model.AlarmRealTime" />
+
+        <import type="com.ycl.car.fragment.AlarmRealTimeFragment" />
+
+        <variable
+            name="item"
+            type="AlarmRealTime" />
+
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/spacer_medium"
+        android:minHeight="50dp"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/tv_alarm_number"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@{String.valueOf(item.index)}"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_alarm_date"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@{item.str_time_on_}"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_alarm_level"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@{item.level_}"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_alarm_area"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@{String.valueOf(item.str_zone)}"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_alarm_info"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@{item.message_}"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@{`Y`.equals(item.is_on_)?`已处理`:`未处理`}"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_operate"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@{`Y`.equals(item.is_confirmed_)?`报警`:`未报警`}"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+</layout>
